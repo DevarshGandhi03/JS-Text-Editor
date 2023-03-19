@@ -73,30 +73,11 @@ const modifyText = (command, displayUI, value) => {
 };
 
 optBtn.forEach((btn) => {
-  if (btn.classList.contains("format")) {
-    btn.addEventListener("click", () => {
-      if (!btn.classList.contains("active")) {
-        modifyText(btn.id, false, null);
-      }
-      else if (btn.id=="bold") {
-        modifyText("bold", false, null);
-      }
-      else if(btn.id=="italic"){
-        modifyText("italic", false, null);
-        
-      }
-      else if (btn.id=="underline") {
-        
-        modifyText("underline", false, null);
-      }else if (btn.id=="strikethrough") {
-        modifyText("strikethrough", false, null);
-      }
-    });
-  } else {
+  
     btn.addEventListener("click", () => {
       modifyText(btn.id, false, null);
     });
-  }
+ 
 });
 advOptBtn.forEach((btn) => {
   btn.addEventListener("change", () => {
