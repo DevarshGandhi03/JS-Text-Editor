@@ -11,7 +11,6 @@ body {
 .container {
   background-color: white;
   width: 60%;
-  /* height: 100vh; */
   position: absolute;
   padding: 50px 30px;
   top: 50%;
@@ -85,4 +84,25 @@ label {
 
 .active {
   background-color: rgb(210, 244, 255);
+}
+@media only screen and (max-width: 930px) {
+  .container {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+  }
+  body{
+    background-color: white;
+  }
+  #edit-div {
+    height: 60%;}
+
 }
